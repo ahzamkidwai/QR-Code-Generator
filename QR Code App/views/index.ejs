@@ -1,0 +1,19 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container  border-4 ">
+    <div class="inner-container flex flex-row justify-center content-center  p-28">
+        <div class="conatainer-box p-28 rounded-2xl bg-green-100">
+            <form action="/submit" method="get">
+                <label for="urltype" class="text-lg text-green-900"> Enter URL : 
+                    <input type="url" id="urltype" name="text" placeholder="" class="border-2 p-1 text-sm w-52 px-3">
+                </label>
+                <br><br>
+                <div class="submit-container flex justify-center">
+                    <button type="submit" class="bg-green-800 px-4 py-1 text-white hover:bg-green-900">Generate QR</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<%- include("partials/footer.ejs") %>

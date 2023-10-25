@@ -1,0 +1,35 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container">
+    <div class="inner-container flex flex-row justify-center content-center  p-24">
+        <div class="conatainer-box p-12 rounded-2xl bg-green-100 w-96">  
+            <div class="link text-center">
+                <p> <a href="<%= text %>"> <%= text %>  </a> </p>
+                <br>
+                <div class="img flex justify-center p-2">
+                    <img src="<%= qrDataURL %>" alt="QR Code">
+                </div>
+            </div>
+            <br>
+            <div class="btn flex justify-evenly">
+                <a href="<%= qrDataURL %>" download="qrcode.png">
+                    <button class="bg-green-800 px-4 py-2 w-28 text-white hover:bg-green-900">Download</button>
+                </a>
+                <form action="/" method="get">
+                    <button class="bg-green-800 px-4 py-2  text-white hover:bg-green-900">Homepage</button>
+                </form>
+            </div>
+
+            <!--
+            <div class="btn flex justify-evenly">
+                <button class="bg-green-800 px-4 py-2 w-28 text-white hover:bg-green-900" >Download</button>
+                <form action="/" method="get">
+                    <button class="bg-green-800 px-4 py-2  text-white hover:bg-green-900" >Homepage</button>
+                </form>
+            </div>
+            -->
+        </div>
+    </div>
+</div>
+
+<%- include("partials/footer.ejs") %>
